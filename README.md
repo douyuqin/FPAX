@@ -28,8 +28,8 @@ Using FPAX:
 
 (4) Run ENAP.py
 
-[1] E. Martin, O. Sentieys, H. Dubois, and J. L. Philippe, “GAUT: Anarchitectural synthesis tool for dedicated signal processors,” in European Design Automation Conference, 1993
-
 Result:
 
 ![image](https://github.com/douyuqin/FPAX/assets/76696712/7aaacd9e-5aac-4718-b5ed-8a2fc0be1d08)
+
+[1] E. Martin, O. Sentieys, H. Dubois, and J. L. Philippe, “GAUT: Anarchitectural synthesis tool for dedicated signal processors,” in European Design Automation Conference, 1993
