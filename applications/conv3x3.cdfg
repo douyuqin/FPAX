@@ -1,0 +1,255 @@
+#LAB-STICC-UBS, 2008
+#Date: Sat Apr 09 11:13:37 2022
+
+#Entity : conv3x3
+source(conv3x3_start) {
+	targets b,
+	a,
+	d,
+	c,
+	h,
+	g,
+	f,
+	e,
+	l,
+	k,
+	j,
+	i,
+	p,
+	o,
+	n,
+	m,
+	s,
+	r;
+}
+#Input declaration
+input(b) {
+	bitwidth 32;
+	signed 1;
+}
+input(a) {
+	bitwidth 32;
+	signed 1;
+}
+input(d) {
+	bitwidth 32;
+	signed 1;
+}
+input(c) {
+	bitwidth 32;
+	signed 1;
+}
+input(h) {
+	bitwidth 32;
+	signed 1;
+}
+input(g) {
+	bitwidth 32;
+	signed 1;
+}
+input(f) {
+	bitwidth 32;
+	signed 1;
+}
+input(e) {
+	bitwidth 32;
+	signed 1;
+}
+input(l) {
+	bitwidth 32;
+	signed 1;
+}
+input(k) {
+	bitwidth 32;
+	signed 1;
+}
+input(j) {
+	bitwidth 32;
+	signed 1;
+}
+input(i) {
+	bitwidth 32;
+	signed 1;
+}
+input(p) {
+	bitwidth 32;
+	signed 1;
+}
+input(o) {
+	bitwidth 32;
+	signed 1;
+}
+input(n) {
+	bitwidth 32;
+	signed 1;
+}
+input(m) {
+	bitwidth 32;
+	signed 1;
+}
+input(s) {
+	bitwidth 32;
+	signed 1;
+}
+input(r) {
+	bitwidth 32;
+	signed 1;
+}
+#Output declaration
+output(out) {
+	bitwidth 32;
+	signed 1;
+}
+#Variable declaration
+temporary(conv3x3_1683) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1684) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1686) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1687) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1690) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1691) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1694) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1695) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1698) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1685) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1688) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1689) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1692) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1693) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1696) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(conv3x3_1697) {
+	bitwidth 32;
+	signed 1;
+}
+operation(op0)  {
+	function mul;
+	read b,a;
+	write conv3x3_1683;
+}
+operation(op1)  {
+	function mul;
+	read d,c;
+	write conv3x3_1684;
+}
+operation(op2)  {
+	function mul;
+	read h,g;
+	write conv3x3_1686;
+}
+operation(op3)  {
+	function mul;
+	read f,e;
+	write conv3x3_1687;
+}
+operation(op4)  {
+	function mul;
+	read l,k;
+	write conv3x3_1690;
+}
+operation(op5)  {
+	function mul;
+	read j,i;
+	write conv3x3_1691;
+}
+operation(op6)  {
+	function mul;
+	read p,o;
+	write conv3x3_1694;
+}
+operation(op7)  {
+	function mul;
+	read n,m;
+	write conv3x3_1695;
+}
+operation(op8)  {
+	function mul;
+	read s,r;
+	write conv3x3_1698;
+}
+operation(op9)  {
+	function add;
+	read conv3x3_1684,conv3x3_1683;
+	write conv3x3_1685;
+}
+operation(op10)  {
+	function add;
+	read conv3x3_1685,conv3x3_1687;
+	write conv3x3_1688;
+}
+operation(op11)  {
+	function add;
+	read conv3x3_1688,conv3x3_1686;
+	write conv3x3_1689;
+}
+operation(op12)  {
+	function add;
+	read conv3x3_1689,conv3x3_1691;
+	write conv3x3_1692;
+}
+operation(op13)  {
+	function add;
+	read conv3x3_1692,conv3x3_1690;
+	write conv3x3_1693;
+}
+operation(op14)  {
+	function add;
+	read conv3x3_1693,conv3x3_1695;
+	write conv3x3_1696;
+}
+operation(op15)  {
+	function add;
+	read conv3x3_1696,conv3x3_1694;
+	write conv3x3_1697;
+}
+operation(op16)  {
+	function add;
+	read conv3x3_1697,conv3x3_1698;
+	write out;
+}
+sink(conv3x3_end) {
+	targets out;
+}

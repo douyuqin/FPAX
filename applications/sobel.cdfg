@@ -1,0 +1,198 @@
+#LAB-STICC-UBS, 2008
+#Date: Sat Apr 09 11:12:35 2022
+
+#Entity : sobel
+source(sobel_start) {
+	targets const_2,
+	const_1,
+	d,
+	i,
+	f,
+	b,
+	h,
+	a;
+}
+#Constant declaration
+constant(const_2) {
+	bitwidth 32;
+	signed 1;
+	value 2;
+	bank 0;
+	address 0;
+	hardwire 1;
+}
+constant(const_1) {
+	bitwidth 1;
+	signed 0;
+	value 1;
+	bank 0;
+	address 1;
+	hardwire 1;
+}
+#Input declaration
+input(d) {
+	bitwidth 32;
+	signed 1;
+}
+input(i) {
+	bitwidth 32;
+	signed 1;
+}
+input(f) {
+	bitwidth 32;
+	signed 1;
+}
+input(b) {
+	bitwidth 32;
+	signed 1;
+}
+input(h) {
+	bitwidth 32;
+	signed 1;
+}
+input(a) {
+	bitwidth 32;
+	signed 1;
+}
+#Output declaration
+output(out) {
+	bitwidth 32;
+	signed 1;
+}
+#Variable declaration
+variable(x2) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+temporary(sobel_1698) {
+	bitwidth 32;
+	signed 1;
+}
+variable(x5) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+temporary(sobel_1699) {
+	bitwidth 32;
+	signed 1;
+}
+variable(y2) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(y5) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(gx) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(y6) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(y4) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(gy) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(y3) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(y1) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+operation(op0)  {
+	function mul;
+	read d,const_1;
+	write x2;
+}
+operation(op1)  {
+	function add;
+	read i,c;
+	write x4;
+}
+operation(op2)  {
+	function mul;
+	read f,const_1;
+	write x5;
+}
+operation(op3)  {
+	function add;
+	read x5,x4;
+	write sobel_1699;
+}
+operation(op4)  {
+	function mul;
+	read b,const_1;
+	write y2;
+}
+operation(op5)  {
+	function mul;
+	read h,const_1;
+	write y5;
+}
+operation(op6)  {
+	function add;
+	read a,a;
+	write gx;
+}
+operation(op7)  {
+	function add;
+	read gx,y2;
+	write y6;
+}
+operation(op8)  {
+	function add;
+	read y6,x2;
+	write y4;
+}
+operation(op9)  {
+	function add;
+	read y4,sobel_1699;
+	write gy;
+}
+operation(op10)  {
+	function add;
+	read gy,i;
+	write y3;
+}
+operation(op11)  {
+	function add;
+	read y3,y5;
+	write y1;
+}
+operation(op12)  {
+	function sub;
+	read y1,sobel_1698;
+	write out;
+}
+operation(op13)  {
+	function sub;
+	read y1,sobel_1698;
+	write out;
+}
+operation(op14)  {
+	function add;
+	read y1,sobel_1698;
+	write out;
+}
+sink(sobel_end) {
+	targets out;
+}

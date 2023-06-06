@@ -1,0 +1,531 @@
+#LAB-STICC-UBS, 2008
+#Date: Sat Dec 17 22:37:53 2022
+
+#Entity : fir
+source(fir_start) {
+	targets const_98,
+	CoeffsLPAREN14RPAREN,
+	CoeffsLPAREN13RPAREN,
+	CoeffsLPAREN12RPAREN,
+	CoeffsLPAREN11RPAREN,
+	CoeffsLPAREN10RPAREN,
+	CoeffsLPAREN9RPAREN,
+	CoeffsLPAREN8RPAREN,
+	CoeffsLPAREN7RPAREN,
+	CoeffsLPAREN6RPAREN,
+	CoeffsLPAREN5RPAREN,
+	CoeffsLPAREN4RPAREN,
+	CoeffsLPAREN3RPAREN,
+	CoeffsLPAREN2RPAREN,
+	CoeffsLPAREN1RPAREN,
+	CoeffsLPAREN0RPAREN,
+	data_in,
+	ValeursLPAREN1RPAREN,
+	ValeursLPAREN2RPAREN,
+	ValeursLPAREN3RPAREN,
+	ValeursLPAREN4RPAREN,
+	ValeursLPAREN5RPAREN,
+	ValeursLPAREN6RPAREN,
+	ValeursLPAREN7RPAREN,
+	ValeursLPAREN8RPAREN,
+	ValeursLPAREN9RPAREN,
+	ValeursLPAREN10RPAREN,
+	ValeursLPAREN11RPAREN,
+	ValeursLPAREN12RPAREN,
+	ValeursLPAREN13RPAREN,
+	ValeursLPAREN14RPAREN,
+	ValeursLPAREN15RPAREN;
+}
+#Constant declaration
+constant(const_98) {
+	bitwidth 32;
+	signed 1;
+	value 98;
+	bank 0;
+	address 0;
+	hardwire 1;
+}
+constant(CoeffsLPAREN14RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value -39;
+	bank 0;
+	address 1;
+}
+constant(CoeffsLPAREN13RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value -327;
+	bank 0;
+	address 2;
+}
+constant(CoeffsLPAREN12RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value 439;
+	bank 0;
+	address 3;
+}
+constant(CoeffsLPAREN11RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value 950;
+	bank 0;
+	address 4;
+}
+constant(CoeffsLPAREN10RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value -2097;
+	bank 0;
+	address 5;
+}
+constant(CoeffsLPAREN9RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value -1674;
+	bank 0;
+	address 6;
+}
+constant(CoeffsLPAREN8RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value 9883;
+	bank 0;
+	address 7;
+}
+constant(CoeffsLPAREN7RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value 9883;
+	bank 0;
+	address 8;
+}
+constant(CoeffsLPAREN6RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value -1674;
+	bank 0;
+	address 9;
+}
+constant(CoeffsLPAREN5RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value -2097;
+	bank 0;
+	address 10;
+}
+constant(CoeffsLPAREN4RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value 950;
+	bank 0;
+	address 11;
+}
+constant(CoeffsLPAREN3RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value 439;
+	bank 0;
+	address 12;
+}
+constant(CoeffsLPAREN2RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value -327;
+	bank 0;
+	address 13;
+}
+constant(CoeffsLPAREN1RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value -39;
+	bank 0;
+	address 14;
+}
+constant(CoeffsLPAREN0RPAREN) {
+	bitwidth 32;
+	signed 1;
+	value 98;
+	bank 0;
+	address 15;
+}
+#Input declaration
+input(data_in) {
+	bitwidth 32;
+	signed 1;
+}
+#Output declaration
+output(data_out) {
+	bitwidth 32;
+	signed 1;
+}
+#Variable declaration
+variable(temporaire) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(ValeursLPAREN1RPAREN) {
+	aging data_in;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 0;
+}
+temporary(fir_1680) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN2RPAREN) {
+	aging ValeursLPAREN1RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 1;
+}
+temporary(fir_1680000001) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN3RPAREN) {
+	aging ValeursLPAREN2RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 2;
+}
+temporary(fir_1680000002) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN4RPAREN) {
+	aging ValeursLPAREN3RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 3;
+}
+temporary(fir_1680000003) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN5RPAREN) {
+	aging ValeursLPAREN4RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 4;
+}
+temporary(fir_1680000004) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN6RPAREN) {
+	aging ValeursLPAREN5RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 5;
+}
+temporary(fir_1680000005) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN7RPAREN) {
+	aging ValeursLPAREN6RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 6;
+}
+temporary(fir_1680000006) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN8RPAREN) {
+	aging ValeursLPAREN7RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 7;
+}
+temporary(fir_1680000007) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN9RPAREN) {
+	aging ValeursLPAREN8RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 8;
+}
+temporary(fir_1680000008) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN10RPAREN) {
+	aging ValeursLPAREN9RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 9;
+}
+temporary(fir_1680000009) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN11RPAREN) {
+	aging ValeursLPAREN10RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 10;
+}
+temporary(fir_1680000010) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN12RPAREN) {
+	aging ValeursLPAREN11RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 11;
+}
+temporary(fir_1680000011) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN13RPAREN) {
+	aging ValeursLPAREN12RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 12;
+}
+temporary(fir_1680000012) {
+	bitwidth 32;
+	signed 1;
+}
+variable(ValeursLPAREN14RPAREN) {
+	aging ValeursLPAREN13RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 13;
+}
+temporary(fir_1680000013) {
+	bitwidth 32;
+	signed 1;
+}
+variable(temporaire000001) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000002) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000003) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000004) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000005) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000006) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000007) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000008) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000009) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000010) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000011) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000012) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000013) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(temporaire000014) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+variable(ValeursLPAREN15RPAREN) {
+	aging ValeursLPAREN14RPAREN;
+	bitwidth 32;
+	signed 1;
+	bank 1;
+	address 14;
+}
+temporary(fir_1680000014) {
+	bitwidth 32;
+	signed 1;
+}
+operation(op0)  {
+	function mul;
+	read data_in,const_98;
+	write temporaire;
+}
+operation(op1)  {
+	function mul;
+	read ValeursLPAREN1RPAREN,CoeffsLPAREN14RPAREN;
+	write fir_1680;
+}
+operation(op2)  {
+	function mul;
+	read CoeffsLPAREN13RPAREN,ValeursLPAREN2RPAREN;
+	write fir_1680000001;
+}
+operation(op3)  {
+	function mul;
+	read CoeffsLPAREN12RPAREN,ValeursLPAREN3RPAREN;
+	write fir_1680000002;
+}
+operation(op4)  {
+	function mul;
+	read CoeffsLPAREN11RPAREN,ValeursLPAREN4RPAREN;
+	write fir_1680000003;
+}
+operation(op5)  {
+	function mul;
+	read CoeffsLPAREN10RPAREN,ValeursLPAREN5RPAREN;
+	write fir_1680000004;
+}
+operation(op6)  {
+	function mul;
+	read CoeffsLPAREN9RPAREN,ValeursLPAREN6RPAREN;
+	write fir_1680000005;
+}
+operation(op7)  {
+	function mul;
+	read CoeffsLPAREN8RPAREN,ValeursLPAREN7RPAREN;
+	write fir_1680000006;
+}
+operation(op8)  {
+	function mul;
+	read CoeffsLPAREN7RPAREN,ValeursLPAREN8RPAREN;
+	write fir_1680000007;
+}
+operation(op9)  {
+	function mul;
+	read ValeursLPAREN9RPAREN,CoeffsLPAREN6RPAREN;
+	write fir_1680000008;
+}
+operation(op10)  {
+	function mul;
+	read CoeffsLPAREN5RPAREN,ValeursLPAREN10RPAREN;
+	write fir_1680000009;
+}
+operation(op11)  {
+	function mul;
+	read CoeffsLPAREN4RPAREN,ValeursLPAREN11RPAREN;
+	write fir_1680000010;
+}
+operation(op12)  {
+	function mul;
+	read CoeffsLPAREN3RPAREN,ValeursLPAREN12RPAREN;
+	write fir_1680000011;
+}
+operation(op13)  {
+	function add;
+	read CoeffsLPAREN2RPAREN,ValeursLPAREN13RPAREN;
+	write fir_1680000012;
+}
+operation(op14)  {
+	function add;
+	read CoeffsLPAREN1RPAREN,ValeursLPAREN14RPAREN;
+	write fir_1680000013;
+}
+operation(op15)  {
+	function add;
+	read fir_1680000001,fir_1680;
+	write temporaire000001;
+}
+operation(op16)  {
+	function add;
+	read temporaire000001,fir_1680000002;
+	write temporaire000002;
+}
+operation(op17)  {
+	function add;
+	read temporaire000002,fir_1680000003;
+	write temporaire000003;
+}
+operation(op18)  {
+	function add;
+	read temporaire000003,fir_1680000004;
+	write temporaire000004;
+}
+operation(op19)  {
+	function add;
+	read temporaire000004,fir_1680000005;
+	write temporaire000005;
+}
+operation(op20)  {
+	function add;
+	read temporaire000005,fir_1680000006;
+	write temporaire000006;
+}
+operation(op21)  {
+	function add;
+	read temporaire000006,fir_1680000007;
+	write temporaire000007;
+}
+operation(op22)  {
+	function add;
+	read temporaire000007,fir_1680000008;
+	write temporaire000008;
+}
+operation(op23)  {
+	function add;
+	read temporaire000008,fir_1680000009;
+	write temporaire000009;
+}
+operation(op24)  {
+	function add;
+	read temporaire000009,fir_1680000010;
+	write temporaire000010;
+}
+sink(fir_end) {
+	targets data_out;
+}

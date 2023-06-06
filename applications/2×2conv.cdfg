@@ -1,0 +1,115 @@
+#LAB-STICC-UBS, 2008
+#Date: Wed Nov 24 14:42:41 2021
+
+#Entity : 111
+source(111_start) {
+	targets b,
+	a,
+	d,
+	c,
+	h,
+	g,
+	f,
+	e;
+}
+#Input declaration
+input(b) {
+	bitwidth 32;
+	signed 1;
+}
+input(a) {
+	bitwidth 32;
+	signed 1;
+}
+input(d) {
+	bitwidth 32;
+	signed 1;
+}
+input(c) {
+	bitwidth 32;
+	signed 1;
+}
+input(h) {
+	bitwidth 32;
+	signed 1;
+}
+input(g) {
+	bitwidth 32;
+	signed 1;
+}
+input(f) {
+	bitwidth 32;
+	signed 1;
+}
+input(e) {
+	bitwidth 32;
+	signed 1;
+}
+#Output declaration
+output(y) {
+	bitwidth 32;
+	signed 1;
+}
+#Variable declaration
+temporary(111_1672) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1673) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1675) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1676) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1674) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1677) {
+	bitwidth 32;
+	signed 1;
+}
+operation(op0)  {
+	function mul;
+	read b,a;
+	write 111_1672;
+}
+operation(op1)  {
+	function mul;
+	read d,c;
+	write 111_1673;
+}
+operation(op2)  {
+	function mul;
+	read h,g;
+	write 111_1675;
+}
+operation(op3)  {
+	function mul;
+	read f,e;
+	write 111_1676;
+}
+operation(op4)  {
+	function add;
+	read 111_1673,111_1672;
+	write 111_1674;
+}
+operation(op5)  {
+	function add;
+	read 111_1674,111_1676;
+	write 111_1677;
+}
+operation(op6)  {
+	function add;
+	read 111_1675,111_1677;
+	write y;
+}
+sink(111_end) {
+	targets y;
+}

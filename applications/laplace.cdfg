@@ -1,0 +1,159 @@
+#LAB-STICC-UBS, 2008
+#Date: Wed Nov 24 10:45:21 2021
+
+#Entity : 111
+source(111_start) {
+	targets const_8,
+	const_3,
+	i,
+	b,
+	a,
+	c,
+	d,
+	e,
+	f,
+	g,
+	h;
+}
+#Constant declaration
+constant(const_8) {
+	bitwidth 32;
+	signed 1;
+	value 8;
+	bank 0;
+	address 0;
+	hardwire 1;
+}
+constant(const_3) {
+	bitwidth 2;
+	signed 0;
+	value 3;
+	bank 0;
+	address 1;
+	hardwire 1;
+}
+#Input declaration
+input(i) {
+	bitwidth 32;
+	signed 1;
+}
+input(b) {
+	bitwidth 32;
+	signed 1;
+}
+input(a) {
+	bitwidth 32;
+	signed 1;
+}
+input(c) {
+	bitwidth 32;
+	signed 1;
+}
+input(d) {
+	bitwidth 32;
+	signed 1;
+}
+input(e) {
+	bitwidth 32;
+	signed 1;
+}
+input(f) {
+	bitwidth 32;
+	signed 1;
+}
+input(g) {
+	bitwidth 32;
+	signed 1;
+}
+input(h) {
+	bitwidth 32;
+	signed 1;
+}
+#Output declaration
+output(y) {
+	bitwidth 32;
+	signed 1;
+}
+#Variable declaration
+variable(s2) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+temporary(111_1675) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1676) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1677) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1678) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1679) {
+	bitwidth 32;
+	signed 1;
+}
+temporary(111_1680) {
+	bitwidth 32;
+	signed 1;
+}
+variable(s1) {
+	bitwidth 32;
+	signed 1;
+	value 0;
+}
+operation(op0)  {
+	function mul;
+	read i,const_3;
+	write s2;
+}
+operation(op1)  {
+	function add;
+	read b,a;
+	write 111_1675;
+}
+operation(op2)  {
+	function add;
+	read 111_1675,c;
+	write 111_1676;
+}
+operation(op3)  {
+	function add;
+	read 111_1676,d;
+	write 111_1677;
+}
+operation(op4)  {
+	function add;
+	read 111_1677,e;
+	write 111_1678;
+}
+operation(op5)  {
+	function add;
+	read 111_1678,f;
+	write 111_1679;
+}
+operation(op6)  {
+	function add;
+	read 111_1679,g;
+	write 111_1680;
+}
+operation(op7)  {
+	function add;
+	read 111_1680,h;
+	write s1;
+}
+operation(op8)  {
+	function sub;
+	read s1,s2;
+	write y;
+}
+sink(111_end) {
+	targets y;
+}
